@@ -19,10 +19,15 @@
             -Aplicar en hover opacidad al 1.0
     */
 .btn {
-  border: 1px transparent;
+  border: 1px transparent solid;
   border-radius: 0.3em;
   box-shadow: none;
   padding: 1em;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+btn:hover {
+  opacity: 1;
 }
 
 /*
@@ -30,10 +35,17 @@
         
         Para los botones con clases btn y small:
             -Tamaño de fuente de 0.7em
+      
         
         Para los botones con clases btn y big:
             -Tamaño de fuente de 1.1em
     */
+button.btn.small {
+  font-size: 0.7em;
+}
+button.btn.big {
+  font-size: 1.1em;
+}
 
 /*
         Sección Colores
@@ -44,6 +56,22 @@
             -sky: Fondo #00BCD4; color de texto blanco
             -purple: Fondo #673AB7; color de texto blanco
     */
+button.btn.black {
+  background-color: #1a237e;
+  color: white;
+}
+button.btn.green {
+  background-color: #4caf50;
+  color: white;
+}
+button.btn.sky {
+  background-color: #00bcd4;
+  color: white;
+}
+button.btn.purple {
+  background-color: #673ab7;
+  color: white;
+}
 
 /*
         Sección Bordes
@@ -57,3 +85,21 @@
             -sky: Color de borde y texto -> #00BCD4
             -purple: Color de borde y texto -> #673AB7
     */
+button.btn.border {
+  background-color: transparent;
+  border-color: #1a237e;
+  color: #1a237e;
+}
+
+button.btn.border.green {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+button.btn.border.sky {
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+button.btn.border.purple {
+  border-color: #673ab7;
+  color: #673ab7;
+}
