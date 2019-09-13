@@ -8,6 +8,11 @@ img {
   object-fit: cover;
   border: gray solid;
 }
+img:hover {
+  width: 85%;
+  height: 85%;
+}
+
 .h1 {
   text-align: center;
   margin: 10em 5em 0em 5em;
@@ -15,8 +20,9 @@ img {
 .hr {
   align-content: center;
   width: 25%;
-  height: 50%;
-  background-color: white solid;
+  height: 3px;
+  background-color: white;
+  border: none;
 }
 .container {
   display: grid;
