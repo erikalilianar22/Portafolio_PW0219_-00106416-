@@ -1,23 +1,127 @@
-.body{
-    background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/fondo-celeste-oscuro-6269.jpg");
-    margin: 5em;
-    padding: 5em;
+.body {
+  background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/fondo-celeste-oscuro-6269.jpg");
+  padding: 2em 5em;
+  justify-content: center;
 }
 img {
-    width: 10%;
-    height: 10%;
-    object-fit: cover;
-  }
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border: gray solid;
+}
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+.bot1 {
+  float: right;
+  font-size: 16px;
+  padding: 6px;
+  margin: 0em 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: #f40348;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.hr{
-    height: 3px;
-    background-color: white;
+.bot2 {
+  font-size: 16px;
+  padding: 6px;
+  float: right;
+  border-radius: 8px;
+  border: none;
+  background-color: #2636be;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.uno{
-    border-radius: 10px;
+.bot3 {
+  margin: 0em 1em;
+  font-size: 16px;
+  padding: 6px;
+  float: right;
+  border-radius: 8px;
+  border: none;
+  background-color: #5b0678;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fo1 {
+  margin: 0em 1em;
+  font-size: 16px;
+  padding: 2px;
+  float: left;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fo2 {
+  margin: 0em 1em;
+  font-size: 16px;
+  padding: 2px;
+  float: right;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-auto-rows: minmax(65px, auto);
+  margin: 8em;
+  padding: 4em;
+  justify-items: center;
+  align-items: center;
+}
+
+.uno {
+  border-radius: 100px;
+}
+.dos {
+  border-radius: 100px;
+}
+.tres {
+  border-radius: 100px;
+}
+.cuatro {
+  border-radius: 100px;
+}
+.cinco {
+  border-radius: 100px;
+}
+.seis {
+  border-radius: 100px;
+}
+.siete {
+  border-radius: 100px;
+}
+.ocho {
+  border-radius: 100px;
+}
+.nueve {
+  border-radius: 100px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.diez {
+  border-radius: 100px;
+}
+.once {
+  border-radius: 100px;
+}
+.doce {
+  border-radius: 100px;
+}
+.trece {
+  border-radius: 100px;
+}
+.catorce {
+  border-radius: 100px;
+}
+.quince {
+  border-radius: 100px;
 }
