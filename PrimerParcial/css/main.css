@@ -19,16 +19,18 @@ body {
   text-align: center;
   font-weight: 400;
 }
-/*estilo para container de foto y logos de git y twitter*/
+
+/*estilo para que el container sea responsive*/
 .container {
   display: flexbox;
-  padding: 0em 3em 4.8em 2em;
+  padding: 0em 3em 4.8em 3em;
 }
+/*diseño para el logo y la lista del header*/
 .header {
   display: flex;
   justify-content: space-between;
 }
-
+/*logo de naldana(isotipo)*/
 .src-only {
   display: none;
 }
@@ -42,12 +44,12 @@ p {
   padding: 1rem;
   line-height: 25px;
 }
-
+/*tamaño de logo Isotipo*/
 .logo {
   width: 90px;
   margin: 1em;
 }
-
+/**/
 .options {
   color: inherit;
   text-decoration: none;
@@ -118,9 +120,8 @@ a {
 .fab.fa-github:hover {
   font-size: 2.1em;
 }
-
+/*tamaño de la flecha*/
 .fas.fa-arrow-circle-down {
-  /*tamaño de la flecha*/
   font-size: 4.5em;
   color: #0ac693;
 }
@@ -128,8 +129,8 @@ a {
 .fas.fa-arrow-circle-down:hover {
   color: white;
 }
+/*modificar el espacio en donde esta la flechita*/
 .hide-mobile.show-desktop {
-  /*modificar el espacio en donde esta ka flechita*/
   margin: 2em 0em 2em 0em;
 }
 .green-area {
@@ -263,6 +264,7 @@ a {
   font-weight: 400;
   color: white;
   font-size: 1rem;
+  width: 15em;
 }
 
 .black-decoration {
@@ -306,10 +308,17 @@ footer .social-links {
   text-decoration: none;
   font-weight: 700;
 }
+/*agregando hover para letras de la primera lista */
 .menu li a:hover {
   color: #0ac693;
 }
-
+/*color para contacto*/
+.menu li:last-child a {
+  color: #f74442;
+}
+.menu li:last-child a:hover {
+  color: white;
+}
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   .about {
