@@ -19,9 +19,10 @@ body {
   text-align: center;
   font-weight: 400;
 }
+/*estilo para container de foto y logos de git y twitter*/
 .container {
   display: flexbox;
-  padding: 0em 2em;
+  padding: 0em 3em 4.8em 2em;
 }
 .header {
   display: flex;
@@ -35,7 +36,7 @@ body {
 .hide-mobile {
   display: none;
 }
-
+/*tamaño de la etiqueta p*/
 p {
   font-size: 0.75em;
   padding: 1rem;
@@ -74,9 +75,9 @@ p {
   letter-spacing: 0.002em;
   margin-top: 1em;
 }
-
+/*tanaño y color de la letra de la etiqueta p del primer container*/
 .big-hero p {
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: #d7dee6;
 }
 
@@ -104,20 +105,32 @@ a {
 }
 .fab.fa-github {
   /*tamaño para icono de git*/
-  font-size: 2em;
+  font-size: 2.5em;
 }
 .fab.fa-twitter {
   /*tamaño para icono de twitter*/
-  font-size: 2em;
+  font-size: 2.5em;
 }
+/*agregando hover a logo de twitter y git */
+.fab.fa-twitter:hover {
+  font-size: 2.1em;
+}
+.fab.fa-github:hover {
+  font-size: 2.1em;
+}
+
 .fas.fa-arrow-circle-down {
   /*tamaño de la flecha*/
-  font-size: 4em;
+  font-size: 4.5em;
   color: #0ac693;
+}
+/*hover para la flechita*/
+.fas.fa-arrow-circle-down:hover {
+  color: white;
 }
 .hide-mobile.show-desktop {
   /*modificar el espacio en donde esta ka flechita*/
-  margin: 0em 0em 5em 0em;
+  margin: 2em 0em 2em 0em;
 }
 .green-area {
   background-color: #0ac693;
@@ -224,18 +237,6 @@ a {
   font-size: 1em;
   width: 100%;
 }
-/*modificandi los divs de contacto y bio-info*/
-
-.bio-info {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.about > .bio-info {
-  display: flexbox;
-}
-.about > .contact {
-  display: flexbox;
-}
 
 /* Decorando placeholder */
 
@@ -276,7 +277,7 @@ footer {
 footer .social-links {
   margin: 0;
 }
-
+/*posiciones del menu del primer div*/
 .menu {
   background-color: #112935;
   position: absolute;
@@ -286,21 +287,27 @@ footer .social-links {
   width: 100vw;
   height: calc(100vh - 60px);
 }
-
+/*modificando menu del primer div*/
 .menu {
   list-style: none;
   text-align: left;
   padding: 1em;
 }
+/*modificando la lista del primer div*/
 .menu li {
   display: block;
   padding: 0.5em;
   margin-top: 5px;
+  font-size: 1.5em;
 }
-
+/*modificando las letras de la lista del primer div*/
 .menu li a {
   color: white;
   text-decoration: none;
+  font-weight: 700;
+}
+.menu li a:hover {
+  color: #0ac693;
 }
 
 /* Pesonalizando estilo para tablets*/
@@ -357,12 +364,17 @@ footer .social-links {
     grid-auto-rows: repeat(2, 1fr);
     justify-content: space-between;
   }
-
+  /*modificando el h2 del about*/
   .about h2 {
     grid-column: 1 / span 3;
   }
+  /**/
   .contact {
     grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .bio-info {
+    grid-column: 1/2;
     grid-row: 2/3;
   }
 }
