@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+/* El CSS siguiente esta pensando primero para moviles y luego para 
+   Escritorio*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: calc(0.5em + 0.9vh);
+}
+
+/* El estilo base para moviles */
+body {
+  background-color: #112935;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.container {
+  display: flexbox;
+  padding: 0em 2em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.src-only {
+  display: none;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+p {
+  font-size: 0.75em;
+  padding: 1rem;
+  line-height: 25px;
+}
+
+.logo {
+  width: 90px;
+  margin: 1em;
+}
+
+.options {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  top: 30%;
+  right: 95%;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.options i:last-child {
+  font-size: 1.6rem;
+}
+
+/* Big area */
+.big-hero img {
+  width: 150px;
+}
+
+.big-hero h2 {
+  font-size: 1.875em;
+  font-weight: 700;
+  letter-spacing: 0.002em;
+  margin-top: 1em;
+}
+
+.big-hero p {
+  font-size: 0.9em;
+  color: #d7dee6;
+}
+
+/* Social links*/
+.social-links {
+  /*modificar diseño de iconos sociales*/
+  list-style: none;
+  padding: 0;
+  margin: 0em 0em 0.5em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+a {
+  /*modificar el padding de las referencias*/
+  padding: 0em 0.5em;
+}
+.social-links li a {
+  /*diseño de los iconos de git y twitter*/
+  color: #d7dee6;
+  text-decoration: none;
+  font-size: 2.5em;
+  width: 6em;
+  height: 60px;
+}
+.fab.fa-github {
+  /*tamaño para icono de git*/
+  font-size: 2em;
+}
+.fab.fa-twitter {
+  /*tamaño para icono de twitter*/
+  font-size: 2em;
+}
+.fas.fa-arrow-circle-down {
+  /*tamaño de la flecha*/
+  font-size: 4em;
+  color: #0ac693;
+}
+.hide-mobile.show-desktop {
+  /*modificar el espacio en donde esta ka flechita*/
+  margin: 0em 0em 5em 0em;
+}
+.green-area {
+  background-color: #0ac693;
+}
+
+.post {
+  padding: 1em;
+  margin-bottom: -2px;
+}
+.post h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125em;
+  margin: 1em;
+}
+
+.post ul {
+  list-style: none;
+}
+
+.post ul li {
+  min-height: 300px;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+.post ul li article {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-bottom: 2em;
+}
+
+.post article img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post article h3 {
+  color: #0d5061;
+  margin-top: 2em;
+  padding: 0em 1rem;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post article p {
+  color: #112935;
+  font-size: 0.75em;
+  padding: 1rem;
+  line-height: 25px;
+}
+
+/* About */
+
+.about {
+  margin-top: 2em;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125em;
+  margin: 2em;
+}
+
+.bio-info img {
+  width: 200px;
+}
+
+.bio-info p {
+  font-size: 16px;
+  padding: 2em;
+  text-align: left;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0px 1em;
+}
+
+.contact * + * {
+  margin-top: 1.5em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0px 2em;
+  font-size: 1em;
+  width: 100%;
+}
+/*modificandi los divs de contacto y bio-info*/
+
+.bio-info {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.about > .bio-info {
+  display: flexbox;
+}
+.about > .contact {
+  display: flexbox;
+}
+
+/* Decorando placeholder */
+
+::-webkit-input-placeholder {
+  color: #d7dee6;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #d7dee6;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #d7dee6;
+}
+
+:-ms-input-placeholder {
+  color: #d7dee6;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #f74442;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+}
+
+.black-decoration {
+  background-image: url("../images/decoracion_oscura_small.svg");
+}
+
+footer {
+  background-color: #0d5061;
+  color: #d7dee6;
+}
+
+footer .social-links {
+  margin: 0;
+}
+
+.menu {
+  background-color: #112935;
+  position: absolute;
+  z-index: 20;
+  top: 60px;
+  right: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+}
+
+.menu {
+  list-style: none;
+  text-align: left;
+  padding: 1em;
+}
+.menu li {
+  display: block;
+  padding: 0.5em;
+  margin-top: 5px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+  .about {
+    display: flex;
+  }
+  .post ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .post ul li {
+    min-height: 350px;
+    max-height: 3500px;
+    margin: 1rem 2rem;
+    flex: 1 0 300px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 1.5em;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .menu {
+    background-color: #112935;
+    position: static;
+    z-index: 20;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 1em;
+  }
+
+  /*TODO: FALTA CSS */
+}
+
+@media only screen and (min-width: 1024px) {
+  /*TODO: FALTA CSS */
+  /*modificando los divs de contacto y bio-info*/
+  .about > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  .about h2 {
+    grid-column: 1 / span 3;
+  }
+  .contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /*TODO: FALTA CSS */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
