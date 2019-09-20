@@ -133,10 +133,11 @@ a {
 .hide-mobile.show-desktop {
   margin: 2em 0em 2em 0em;
 }
+/*color area verde, que contiene las publicaciones*/
 .green-area {
   background-color: #0ac693;
 }
-
+/*desde aqui hasta la linea 191se modifica el div que contiene las publicaciones*/
 .post {
   padding: 1em;
   margin-bottom: -2px;
@@ -190,7 +191,7 @@ a {
 }
 
 /* About */
-
+/*desde aqui hasta la 241 se modifica el about, el bio-info y el contact*/
 .about {
   margin-top: 2em;
 }
@@ -258,7 +259,7 @@ a {
 :-ms-input-placeholder {
   color: #d7dee6;
 }
-
+/*estilo para modificar el "boton" de contacto */
 .contact-form input[type="submit"] {
   background-color: #f74442;
   font-weight: 400;
@@ -270,12 +271,12 @@ a {
 .black-decoration {
   background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/*modificando el footer*/
 footer {
   background-color: #0d5061;
   color: #d7dee6;
 }
-
+/* margen para los iconos de twitter y git del footer*/
 footer .social-links {
   margin: 0;
 }
@@ -321,6 +322,18 @@ footer .social-links {
 }
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  body {
+    background-color: #112935;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+  }
   .about {
     display: flex;
   }
@@ -360,11 +373,36 @@ footer .social-links {
     display: flex;
     margin-top: 1em;
   }
+  /*modificando los divs de contacto y bio-info*/
+  .about > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  /*modificando el h2 del about*/
+  .about h2 {
+    grid-column: 1 / span 3;
+  }
+  /**/
+  .contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .bio-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 
   /*TODO: FALTA CSS */
 }
 
 @media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
   /*TODO: FALTA CSS */
   /*modificando los divs de contacto y bio-info*/
   .about > .container {
@@ -394,5 +432,25 @@ footer .social-links {
     width: 80%;
     margin: 0 auto;
     max-width: 1440px;
+  }
+  /*modificando los divs de contacto y bio-info*/
+  .about > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  /*modificando el h2 del about*/
+  .about h2 {
+    grid-column: 1 / span 3;
+  }
+  /*modificando el contact*/
+  .contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .bio-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
