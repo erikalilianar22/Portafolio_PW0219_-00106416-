@@ -30,6 +30,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+/*modificando el margen para el menu*/
+.show-desktop.hide-mobile.menu {
+  margin: 0em;
+}
 /*logo de naldana(isotipo)*/
 .src-only {
   display: none;
@@ -142,10 +146,11 @@ a {
   padding: 1em;
   margin-bottom: -2px;
 }
+/*modificando texto "publicaciones"*/
 .post h2 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1.25em;
   margin: 1em;
 }
 
@@ -214,12 +219,12 @@ a {
   line-height: 25px;
   letter-spacing: 2px;
 }
-
+/* hasta la linea 245 modificando el contact*/
 .contact {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0px 1em;
+  padding: 0px 3em;
 }
 
 .contact * + * {
@@ -238,6 +243,10 @@ a {
   border-radius: 0px 2em;
   font-size: 1em;
   width: 100%;
+}
+.contact-form > label {
+  font-weight: 625;
+  font-size: 1.25em;
 }
 
 /* Decorando placeholder */
@@ -315,7 +324,7 @@ footer .social-links {
 }
 /*color para contacto*/
 .menu li:last-child a {
-  color: #f74442;
+  color: red;
 }
 .menu li:last-child a:hover {
   color: white;
@@ -343,7 +352,7 @@ footer .social-links {
     width: 150px;
     margin: 1.5em;
   }
-
+  /*hasta 368 modificando el menu de inicio, publicaciones, acerca de y contacto*/
   .show-desktop {
     display: block;
   }
@@ -370,6 +379,7 @@ footer .social-links {
   }
   /*modificando el h2 del about*/
   .about h2 {
+    font-size: 1.5em;
     grid-column: 1 / span 3;
   }
   /**/
