@@ -1,18 +1,13 @@
 let counter = 0;
 
-let counter_btn = document.querySelector("#counter-btn");
-let counter_space = document.querySelector("#counter-space");
+let counter_btn =  document.querySelector("#counter-btn")
+let counter_space =  document.querySelector("#counter-space")
 
-let add = (function() {
-  let counter = 0;
+let add = () => {
+        counter ++;
+        counter_space.innerHTML = counter;
+}
 
-  return function() {
-    counter += 1;
-    counter_space.innerHTML = counter;
-    return counter;
-  };
-})();
-
-document.getElementById("counter-btn").addEventListener("click", function() {
-  add();
-});
+counter_btn.addEventListener("click", ()=>{
+        add();
+})
